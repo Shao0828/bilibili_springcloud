@@ -18,6 +18,12 @@
             <artifactId>cloud-api-commons</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <!--包含了sleuth+zipkin-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
+
         <!--eureka-client-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

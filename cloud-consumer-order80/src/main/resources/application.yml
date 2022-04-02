@@ -3,7 +3,12 @@ server:
 spring:
   application:
     name: cloud-consumer-oder
-
+  zipkin: #<-------------------------------------关键
+    base-url: http://localhost:9411
+  sleuth: #<-------------------------------------关键
+    sampler:
+    #采样率值介于 0 到 1 之间，1 则表示全部采集
+    probability: 1
 eureka:
   client:
     #表示是否将自己注册进Eurekaserver默认为true。

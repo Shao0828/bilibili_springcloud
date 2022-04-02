@@ -28,7 +28,6 @@ public class CommonResult<E> implements Serializable {
         this.message = message;
     }
 
-
     /**
      * 返回成功
      *
